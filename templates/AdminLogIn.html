@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Management System </title>
+    <link rel="stylesheet" href="{% static 'MyCss/syleclinic.css' %}">
+    <link rel="stylesheet" href="{% static 'MyCss/newstyle.css' %}">
+</head>
+<body>
+    <nav class="navbar background">
+        <ul class="navlist">
+            <li class="dec">NITKKR  CLINIC</li>
+            <li><a href="{% url 'projectclinic' %}">Home</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+            <li><a href="{% url 'register' %}">Register</a></li>
+        </ul>
+        <div class="rightnav">
+            <img class="img2" src="{% static 'image/first-aid-symbol-picture-id816820042.jpg' %}">
+            <div class="dec2">
+            <input type="text" name="search" id="search" placeholder="search">
+            <button class="button button1">Search</button>
+            </div>
+            
+        </div>
+    </nav>
+    <section style="background-image:url('static/image/register.jpg');"class="hucsu background1">
+        <form class="box box2" action="register" method="POST">
+            {% csrf_token %}
+            <h1>Register Here</h1>
+            <input type="text" name="first_name" placeholder="First Name">
+            <input type="text" name="last_name" placeholder="Last Name">
+            <input type="text" name="username" placeholder="Username">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password1" placeholder="Password">
+            <input type="password" name="password2" placeholder="Confirm Password">
+            <input type="submit">
+        </form>
+        <div>
+            {% for message in messages %}
+            <h3>{{message}}</h3>
+            {% endfor %}
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <p class="last">
+            Copyright &copy 2027             Laller Health and Lifestyle Limited  -All Rigth Reserved     
+        </p>
+    </footer>
+    
+</body>
+
+</html>

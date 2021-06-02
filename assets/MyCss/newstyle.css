@@ -1,0 +1,68 @@
+.hucsu{
+    font-family: sans-serif;
+}
+.box{
+    padding:40px;
+    /*background:#e8e5e5;*/
+    text-align: center;
+}
+.backi{
+    padding: 50px 55px;
+}
+.firstclass1{
+    height:80vh;
+}
+
+.box2{
+    width: 1725px;
+    border: 1px solid white;
+}
+.box3{
+    width:300px;
+    border: 1px solid #060044;
+    border-radius: 30px;
+}
+.box h1{
+    color:white;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+.box input[type="text"],.box input[type="password"],.box input[type="email"]{
+    border:0;
+    background:none;
+    display: block;
+    margin:20px auto;
+    text-align: center;
+    border:2px solid #3498db;
+    padding:14px 10px;
+    width:200px;
+    outline:none;
+    color:white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.judges{
+    display: flex;
+}
+.box input[type="text"]:focus,.box input[type="password"]:focus,.box input[type="email"]:focus{
+    width:280px;
+    border-color: #2ecc71;;
+}
+.box input[type="submit"]{
+    border:0;
+    background:none;
+    display: block;
+    margin:20px auto;
+    text-align: center;
+    border:2px solid #2ecc71;
+    padding:14px 40px;
+    outline:none;
+    color:white;
+    border-radius: 24px;
+    transition: 0.25s;  
+    cursor: pointer; 
+}
+.box input[type="submit"]:hover{
+    background:#2ecc71 ;
+}

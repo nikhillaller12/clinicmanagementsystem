@@ -1,0 +1,31 @@
+body {
+    padding: 0%;
+    width: auto;
+    background-color: #dcdcdc;
+    margin: 0px 0px 0px 50px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+table ,tr,th,td{
+    border: 2px solid red;
+    padding: 5px;  
+}
+caption{
+    text-align: left;
+}
+ul{
+  list-style-type: circle;  
+}
+.main{
+    background-color: aqua;
+height: 200px;
+width: 200px;
+border: black solid 2px;
+}
+a:active{
+    color: aqua;
+}

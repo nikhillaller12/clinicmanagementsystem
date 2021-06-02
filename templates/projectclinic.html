@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Clinic</title>
+    <link rel="stylesheet" href="{% static 'MyCss/syleclinic.css' %}">
+</head>
+<body>
+    <nav class="navbar background">
+        <ul class="navlist">
+            <li class="dec">NITKKR CLINIC</li>
+            <li><a href="{% url 'projectclinic' %}">Home</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+            <li><a href="{% url 'register' %}">Register</a></li>
+            <li><a href="#contactus">ContactUs</a></li>
+        </ul>
+        <div class="rightnav">
+            <img class="img2" src="{% static 'image/first-aid-symbol-picture-id816820042.jpg' %}">
+            <div class="dec2">
+            <input type="text" name="search" id="search" placeholder="search">
+            <button class="button button1">Search</button>
+            </div>
+        
+        </div>
+    </nav>
+    <section style="background-image:url('static/image/newimage.jpg');" class="background1 firstclass">
+      
+    </section>
+    <section class="secright box-main"  id="about">
+        <div class="leftsec">
+            <p class="bigp"><b>About Us</b></p>
+            <hr>
+            <p class="smallp">
+                Laller Health and Lifestyle Limited is a India based Healthcare Software company
+                with the vision to provide world-class healthcare software products at affordable prices
+                All our software products are multi-lingual and come with a built-in on-screen editor that
+                 allows our implementation team to localize the software as per country-specific needs.
+            </p>
+        </div>
+        <div class="rightsec">
+            <img src="https://source.unsplash.com/400x400/?medical,laboratory" alt="coding image" class="imagedd">
+        </div>
+</section>
+<section class="secleft box-main">
+        <div class="leftsec">
+            <p class="bigp"><b>Eclinic System</b></p>
+            <hr>
+            <p class="smallp">
+                EClinic Systems is a medical practice management software to manage all aspects of clinic
+              operation. This customizable clinic information system is an integrated healthcare solution
+               which includes OPD Management, Pharmacy, Laboratory, Radiology,  Mobile Application, Online
+                Appointments Scheduling, Secured Messaging, Doctor Portal, Patient and Family Portals, Medical
+                 Electronic Billing, Accounting, HR/Payroll, and HL7/Integrated PACS System
+            </p>
+        </div>
+        <div class="rightsec">
+            <img src="https://source.unsplash.com/400x400/?medical,clinic" alt="coding image" class="imagedd">
+        </div>
+</section>
+<section class="secright2 box-main">
+    <div class="leftsec">
+            <p class="bigp"><b>Important Norms</b></p>
+            <hr>
+            <p class="smallp">To make impact management a reality, the IMP has developed a set of
+                 categories that provide information across the five dimensions. Produced by four
+                  working groups of 40+ organisations, these impact categories enable enterprises
+                   and investors to set goals and assess performance.</p>
+        </div>
+        <div class="rightsec">
+            <img src="https://source.unsplash.com/400x400/?medical,nature" alt="coding image" class="imagedd">
+    </div>
+</section>
+<hr>
+    <section class="display" id="contactus">
+        <h2 style="text-align: center; padding: 10px;">Contact Us</h2>
+        <div class="displau">
+            <input class="text-btn" type="text" name="name" placeholder="Enter your Name">
+            <input class="text-btn" type="text" name="number" placeholder="Enter your Number">
+            <input class="text-btn" type="email" name="name" placeholder="Enter your Email">
+        </div>
+        <textarea class="text-btn" type="text" name="elaborate"  col="10" row="500" placeholder="Plz eleborate Your concern"></textarea>
+        <button class="btn2">Submit</button>
+
+    </section>
+    <footer>
+        <p class="last">
+            Copyright &copy 2027             Laller Health and Lifestyle Limited  -All Rigth Reserved     
+        </p>
+    </footer>
+    
+</body>
+</html>
+
+
