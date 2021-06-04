@@ -1,1 +1,1 @@
-web: gunicorn ClinicManagementProject.wsgi --log-file -
+web: gunicorn ClinicManagementProject.wsgi
