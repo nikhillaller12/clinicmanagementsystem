@@ -17,12 +17,13 @@
             <li><a href="{% url 'projectclinic' %}">Home</a></li>
             <li><a href="{% url 'login' %}">Login</a></li>
             <li><a href="{% url 'register' %}">Register</a></li>
+            <li><a href="{% url 'pd' %}">Patient Details</a></li>
         </ul>
         <div class="rightnav">
             <img class="img2" src="{% static 'image/first-aid-symbol-picture-id816820042.jpg' %}">
             <div class="dec2">
             <input type="text" name="search" id="search" placeholder="search">
-            <button class="button button1">Search</button>
+            <button class="btn">Search</button>
             </div>
             
         </div>
@@ -37,7 +38,7 @@
             <input type="email" name="email" placeholder="Email">
             <input type="password" name="password1" placeholder="Password">
             <input type="password" name="password2" placeholder="Confirm Password">
-            <input type="submit">
+            <input type="submit" value="Register">
         </form>
         <div>
             {% for message in messages %}

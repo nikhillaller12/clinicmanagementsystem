@@ -63,10 +63,31 @@ html{
 .background {
     background: white;
 }
+/*
+.button {
+    background-color: #4CAF50;  
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+  
+ */
+
 .btn{
     border: 1px solid mediumvioletred;
-    font-size: 16px;
-    /* width: 30%; */
+    font-size: 16px; 
     cursor: pointer;
     background: none;
     color: mediumvioletred;
@@ -74,7 +95,10 @@ html{
     margin: 0px 0px 0px 6px;
     border-radius: 5px;
 }
-
+.btn:hover {
+    background-color: mediumvioletred;
+    color:white;
+}
 .firstclass{
     height: 60vh;
     margin: 18px 25px;
@@ -186,3 +210,6 @@ html{
     padding: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.ft{
+    background-color: rgb(172, 35, 20);
+  }

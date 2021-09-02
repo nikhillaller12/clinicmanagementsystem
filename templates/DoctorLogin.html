@@ -18,12 +18,13 @@
             <li><a href="{% url 'projectclinic' %}">Home</a></li>
             <li><a href="{% url 'login' %}">Login</a></li>
             <li><a href="{% url 'register' %}">Register</a></li>
+            <li><a href="{% url 'patientinfo' %}">PR</a></li>
         </ul>
         <div class="rightnav">
             <img class="img2" src="{% static 'image/first-aid-symbol-picture-id816820042.jpg' %}">
             <div class="dec2">
             <input type="text" name="search" id="search" placeholder="search">
-            <button class="button button1">Search</button>
+            <button class="btn">Search</button>
             </div>
             
         </div>
@@ -36,7 +37,7 @@
             {% csrf_token %}
             <input type="text" name="username" placeholder="Username">
             <input type="password" name="password" placeholder="Password">
-            <input type="submit"placeholder="Login">
+            <input type="submit" value="Login">
         </form>
         </div>
         <div class="backi">
@@ -45,7 +46,7 @@
                 {% csrf_token %}
                 <input type="text" name="username" placeholder="Username">
                 <input type="password" name="password" placeholder="Password">
-                <input type="submit" placeholder="Login">
+                <input type="submit" value="Login">
             </form>
             </div>
         </div>

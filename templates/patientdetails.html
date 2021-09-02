@@ -1,0 +1,197 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient details</title>
+    <link rel="stylesheet" href="{% static 'MyCss/syleclinic.css' %}">
+    <link rel="stylesheet" href="{% static 'MyCss/bingo.css' %}">
+</head>
+<body>
+    <nav class="navbar background">
+        <ul class="navlist">
+            <li class="dec">NITKKR CLINIC</li>
+            <li><a href="{% url 'projectclinic' %}">Home</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+            <li><a href="{% url 'register' %}">Register</a></li>
+        </ul>
+        <div class="rightnav">
+          <img class="img2" src="{% static 'image/first-aid-symbol-picture-id816820042.jpg' %}">
+          <div class="dec2">
+          <input type="text" name="search" id="search" placeholder="search">
+          <button class="btn">Search</button>
+          </div>
+      
+      </div>
+    </nav>
+    <section class="dt">
+      <hr>
+    <h2 class="ft">Patient Medical Record</h2>
+    <hr> 
+    <form class="box" action="pd" method="POST">
+        {% csrf_token %}
+        <div class="piko"> 
+        <h3 class="pepo">Patient Name:</h3>
+        <input type="text" name="name" placeholder= "FullName" required />
+        </div>
+        <section class="b2">
+          <h3 class="pepo">Patient Gender:</h3> 
+          <input type="radio"  name="gender" value="Male">
+          <label for="gender"> Male</label>
+          <input type="radio" name="gender" value="Female">
+          <label for="gender"> Female</label>
+          <input type="radio"  name="gender" value="Other">
+          <label for="gender"> Other</label>
+        </section>
+          <section class="b2">
+            <h3 class="pepo">Martial Status:</h3> 
+            <input type="radio"  name="martial" value="Single">
+            <label for="martial"> Single</label>
+            <input type="radio" name="martial" value="Married">
+            <label for="martial"> Married</label>
+            <input type="radio"  name="martial" value="Widowed">
+            <label for="martial"> Widowed</label>
+          </section>
+          <div class="piko">
+            <h3 class="pepo">Phone Number:</h3>
+            <input type="text" name="number" placeholder="Number" size="10"> 
+          </div> 
+        <div class="piko">
+          <h3 class="pepo">D.O.B:</h3>
+          <input type="date" name="dateofbirth" placeholder="MM-DD-YYYY"><br>
+        </div>
+        <h3 class="pepo">Address:</h3>
+        <input type="text" name="address" placeholder= "Street Address">
+        <input type="text" name="city" placeholder= "City">
+        <br>
+        <input type="text" name="state" placeholder= "State">
+        <input type="text" name="pincode" placeholder= "Pin Code" >
+        <br>
+        <hr>
+        <h2 class="bt">Medical History</h2>
+        <hr>
+        <section class="b2">
+        <h4 class="pepo">Choose Recent Disease You suffered</h4>
+      <section class="dot">
+        <section class="back2">
+        <input type="checkbox" name="disease" value="Allergies">
+        <label for="disease"> Allergies</label><br>
+        <input type="checkbox"  name="disease" value="Anemia">
+        <label for="disease"> Anemia</label><br>
+        <input type="checkbox" name="disease" value="Angina">
+        <label for="disease"> Angina</label><br>
+        <input type="checkbox"  name="disease" value="Anxiety">
+        <label for="disease"> Anxiety</label><br>
+        <input type="checkbox"  name="disease" value="Arthritis">
+        <label for="disease"> Arthritis</label><br>
+        <input type="checkbox"  name="disease" value="Asthma">
+        <label for="disease"> Asthma</label><br>
+        <input type="checkbox"  name="disease" value="Atrial Fibrillation">
+        <label for="disease"> Atrial Fibrillation</label><br>
+        <input type="checkbox"  name="disease" value=" Benign Prostatic">
+        <label for="disease"> Benign Prostatic</label><br>
+        <input type="checkbox"  name="disease" value="Hypertrophy">
+        <label for="disease"> Hypertrophy</label><br>
+        <input type="checkbox"  name="disease" value="Blood Clots">
+        <label for="disease"> Blood Clots</label><br>
+        <input type="checkbox"  name="disease" value="Cancer">
+        <label for="disease"> Cancer</label><br>
+        <input type="checkbox"  name="disease" value="Depression">
+        <label for="disease"> Depression</label><br>
+        <input type="checkbox"  name="disease" value="Diabetes">
+        <label for="disease"> Diabetes</label><br>
+        </section>
+        <section class="back2">
+        <input type="checkbox"  name="disease" value="Gallabladder Disease">
+        <label for="disease"> Gallabladder Disease</label><br>
+        <input type="checkbox"  name="disease" value="GERD(Reflux)">
+        <label for="disease"> GERD(Reflux)</label><br>
+        <input type="checkbox"  name="disease" value="Heptitis C">
+        <label for="disease"> Heptitis C</label><br>
+        <input type="checkbox"  name="disease" value="Hyperlipidemia">
+        <label for="disease"> Hyperlipidemia</label><br>
+        <input type="checkbox"  name="disease" value="Hypertension">
+        <label for="disease"> Hypertension</label><br>
+        <input type="checkbox"  name="disease" value=" Liver Disease">
+        <label for="disease"> Liver Disease</label><br>
+        <input type="checkbox"  name="disease" value="Migraine headaches">
+        <label for="disease"> Migraine headaches</label><br>
+        <input type="checkbox"  name="disease" value="Osteoarthiris">
+        <label for="disease"> Osteoarthiris</label><br>
+        <input type="checkbox"  name="disease" value="Peptic Ulcer Disease">
+        <label for="disease"> Peptic Ulcer Disease</label><br>
+        <input type="checkbox"  name="disease" value="Renal Disease">
+        <label for="disease"> Renal Disease</label><br>
+        <input type="checkbox"  name="disease" value=" Seizure Disorder">
+        <label for="disease"> Seizure Disorder</label><br>
+        <input type="checkbox"  name="disease" value="Thyroid Disease">
+        <label for="disease"> Thyroid Disease</label><br>
+        <input type="checkbox"  name="disease"  value="Other">
+        </section>
+      </section>
+        <div class="buck">
+          <h4 class="pepo">Are You Currently taking any medication?</h4>
+          <input type="checkbox" name="medicine"  value="Yes">
+          <label for="medicine">Yes</label>
+          <input type="checkbox" name="medicine"  value="No">
+          <label for="medicine">No</label><br>
+          <label>If so, please list:</label><br>
+          <textarea name="medicine" rows="4" cols="50" placeholder="Plz enter NO if selected No">
+          </textarea>
+        </div>
+        <div class="buck">
+          <h4 class="pepo">Do you have any medication allergies?</h4>
+          <input type="checkbox" name="allergies"  value="Yes">
+          <label for="allergies">Yes</label>
+          <input type="checkbox" name="allergies"  value="No">
+          <label for="allergies">No</label>
+          <input type="checkbox" name="allergies"  value="Not sure">
+          <label for="allergies">Not Sure</label>
+        </div>
+        <div class="buck">
+          <h4 class="pepo">Do you use or do you have history of using tobacco?</h4>
+          <input type="checkbox" name="tobacco"  value="Yes">
+          <label for="tobacco">Yes</label>
+          <input type="checkbox" name="tobacco"  value="No">
+          <label for="tobacco">No</label>
+        </div>
+          <div class="buck">
+            <h4 class="pepo">Do you use or do you have history of using illegal drugs?</h4>
+            <input type="checkbox" name="drugs"  value="Yes">
+            <label for="drugs">Yes</label>
+            <input type="checkbox" name="drugs"  value="No">
+            <label for="drugs">No</label>
+          </div>
+          <div class="buck">
+            <h4 class="pepo">How often do you consume alchohol?</h4>
+            <input type="checkbox" name="alchohol"  value="Daily">
+            <label for="alchohol">Daily</label>
+            <input type="checkbox" name="alchohol"  value="Weekly">
+            <label for="alchohol">Weekly</label>
+            <input type="checkbox" name="alchohol"  value="Monthly">
+            <label for="alchohol">Monthly</label><br>
+            <input type="checkbox" name="alchohol"  value="Occasionally">
+            <label for="alchohol">Occasionally</label>
+            <input type="checkbox" name="alchohol"  value="Never">
+            <label for="alchohol">Never</label><br>
+          </div>
+          <div class="buck">
+            <h4 class="pepo">How healthy do you feel in general?</h4>
+            <input type="range" name="generalhealth" min="0" max="10"><br>
+            <label for="generalhealth">Health</label>  
+          </div>
+        <hr>
+        <div class="buck">
+        <input type="submit" value="Submit">  
+        </div>    
+        </form>  
+    </section>
+    <footer>
+        <p class="last">
+            Copyright &copy 2027             Laller Health and Lifestyle Limited  -All Rigth Reserved     
+        </p>
+    </footer>
+</body>
+</html>

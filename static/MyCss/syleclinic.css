@@ -14,7 +14,7 @@ html{
     cursor: pointer;
 }
 .dec{
-    border:2px solid mediumvioletred;
+    border:2px solid rgb(22, 181, 221);
     margin:4px;
     border-radius: 8px;
 }
@@ -39,7 +39,7 @@ html{
     font-family: sans-serif;
 }
 .navlist li a:hover{
-    color:mediumvioletred;
+    color:rgb(22, 181, 221);
 }
 .rightnav{
     width: 30%;
@@ -49,7 +49,7 @@ html{
     
 }
 #search {
-    border: 1px solid mediumvioletred;
+    border: 1px solid rgb(22, 181, 221);
     border-radius: 4px;
     padding: 9px;
     font-size: 17px
@@ -63,45 +63,42 @@ html{
 .background {
     background: white;
 }
+/*
 .button {
-    color: mediumvioletred;
-    padding: 3px;
-    margin: 0px 0px 0px 6px;
-    background-color: mediumvioletred; /* Green */
+    background-color: #4CAF50;  
     border: none;
     color: white;
+    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    transition-duration: 0.4s;
+    margin: 4px 2px;
     cursor: pointer;
   }
   
-  .button1 {
+.button1 {
     background-color: white; 
     color: black; 
-    border: 1px solid mediumvioletred;
-    border-radius: 10px;
-  }
+    border: 2px solid #4CAF50;
+}
   
-  .button1:hover {
-    background-color: mediumvioletred;
-    color: white;
-  }
-  
-/*
+ */
+
 .btn{
-    border: 1px solid mediumvioletred;
+    border: 1px solid rgb(22, 181, 221);
     font-size: 16px; 
     cursor: pointer;
     background: none;
-    color: mediumvioletred;
+    color: rgb(22, 181, 221);
     padding: 3px;
     margin: 0px 0px 0px 6px;
     border-radius: 5px;
 }
-*/
+.btn:hover {
+    background-color: rgb(22, 181, 221);
+    color:white;
+}
 .firstclass{
     height: 60vh;
     margin: 18px 25px;
@@ -109,7 +106,6 @@ html{
 .background1{
     background-size: cover;
 }
-
 .btnmain{
     display: flex;
     height: 70%;
@@ -130,7 +126,7 @@ html{
 }
 .img2{
     width: 11%;
-    border: 1px solid mediumvioletred;
+    border: 1px solid rgb(134, 128, 132);
     border-radius: 35px;
 }
 .bigp{
@@ -210,6 +206,6 @@ html{
     background: rgb(58 58 58);
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

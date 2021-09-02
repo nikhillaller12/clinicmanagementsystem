@@ -1,4 +1,5 @@
 from django.contrib import admin
-from .models import registery
+from .models import *
 
-admin.site.register(registery)
+
+admin.site.register(medicalrecords)

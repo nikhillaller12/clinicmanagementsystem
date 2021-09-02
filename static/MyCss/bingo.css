@@ -1,0 +1,110 @@
+.dt{
+    background: #f3ffed;
+}
+.ft{
+    padding:5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.ft2{
+    padding:5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color:#305479;
+}
+.piko{
+    display:flex;
+}
+.piko2{
+    display:flex;
+    margin:3px 0px 3px 0px;
+}
+.dot{
+    display: flex;
+}
+.dot2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 2px 0px 0px 10px;
+    border: 2px solid #b392af;
+    padding: 5px 45px;
+    border-radius: 10px;
+}
+.back{
+    width: 20%;
+}
+.jk{
+    opacity: 0;
+}
+.back2{
+    width: 50%;
+}
+.pepo{
+    margin:5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.pepo2{
+    margin:5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #305479;
+}
+
+.lifo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+    font-size: 18px;
+    padding: 5px;
+    border: 2px solid #ffc57d;
+    border-radius: 6px;
+}
+
+.box{
+    padding:40px;
+}
+
+.box input[type="text"],input[type="date"]{
+    border:0;
+    background:none;
+    margin: 0px 0px 20px 16px;
+    text-align: center;
+    border:2px solid #ffc57d;
+    padding:14px 10px;
+    width:200px;
+    outline:none;
+    color:black;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type="text"]:focus,input[type="date"]:focus{
+    width:280px;
+    border-color: #2ecc71;
+}
+.box input[type="checkbox"]{
+    margin:0px 0px 3px 5px;
+}
+.box input[type="submit"]{
+    border:0;
+    background:none;
+    display: block;
+    margin: 0px 0px 20px 16px;
+    text-align: center;
+    border:2px solid rgb(22, 181, 221);
+    padding:14px 40px;
+    outline:none;
+    color:black;
+    border-radius: 24px;
+    transition: 0.25s;  
+    cursor: pointer; 
+}
+.box input[type="submit"]:hover{
+    background:rgb(22, 181, 221) ;
+}
+.bt{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+.b2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0px 0px 8px 2px;   
+}
+.buck{
+    margin: 15px 0px 10px 0px;
+}
